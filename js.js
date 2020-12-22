@@ -45,5 +45,12 @@ function click_share_button()
 function click_back_button()
 {
     article_share=$(".article__share");
-    $(article_share).css("display","none");    
+    $(article_share).css("display","none");  
+    
+      //FOR WIDESCREEN.
+      button_share=$(".article__img-container-share");
+      $(button_share).removeClass("article__img-container-share--active");
+      img_share=$(".article__img-share");
+      $(img_share).removeClass("article__img-share--active");
+      active=false;
 }
