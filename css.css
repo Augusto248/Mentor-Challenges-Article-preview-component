@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: Manrope;
+}
+
+.article {
+  width: 305px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  padding-bottom: 20px;
+  position: relative;
+  box-shadow: 0px 35px 45px -11px hsl(212, 23%, 69%);
+}
+
+.article__img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.article__img {
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+}
+
+.article__content {
+  margin-top: 250px;
+}
+
+.article__title {
+  color: rgb(82, 81, 81);
+  font-size: 1.1rem;
+  line-height: 26px;
+}
+
+.article__description {
+  margin-top: 20px;
+  color: rgb(82, 81, 81);
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.article__user {
+  margin-top: 35px;
+  display: flex;
+}
+
+.article__img-user {
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+}
+
+.article__date {
+  font-size: 0.8rem;
+}
+.article__user-name {
+  font-size: 0.8rem;
+  margin-bottom: 7px;
+}
+
+.article__user-info {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.article__img-share {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.article__share {
+  background-color: #48556e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: absolute;
+  padding: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.article__social-networks {
+  display: flex;
+}
+.article__title-share {
+  color: rgb(163, 168, 177);
+  margin-right: 10px;
+  font-size: 0.8rem;
+  line-height: 22px;
+  letter-spacing: 0.3rem;
+}
+.article__social-network {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.article__back {
+  width: 30px;
+  height: 30px;
+  background-color: #6a7f9a;
+  border-radius: 100%;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.article__img-back {
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 770px) {
+  .article {
+    width: 700px;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .article__img-container {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .article__img {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .article__content {
+    margin-top: 0;
+    padding: 30px;
+  }
+
+  .article__img-share {
+    margin-top: 10px;
+    margin-left: 170px;
+  }
+  .article-container {
+    position: relative;
+  }
+
+  .article__share-mobile {
+    display: none;
+  }
+
+  .article__share {
+    background-color: #48556e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    padding: 25px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 503px;
+  }
+
+  .article__share:after {
+    content: "";
+    background-color: #48556e;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    bottom: -28px;
+    position: absolute;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 58%, 0 0, 100% 0);
+  }
+
+  .article__back {
+    display: none;
+  }
+}
